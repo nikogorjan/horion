@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+
+.cells-row{
+    display: flex;
+    margin-top: 64px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cell{
+    width: 33.333333%;
+
+}
+
+.cells-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #EDF3F2;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.cell-content-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.marginbot{
+    margin-bottom: 64px;
+}
+
+.bullet-row{
+    display: flex;
+    align-items: center;
+}
+
+.bullet-wrapper{
+    width: 10px;
+    height: 10px;
+    margin-right: 12px;
+
+}
+
+.bullet {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: middle; /* Align bullet vertically */
+}
+
+.bullet-paragraph {
+    display: inline-block;
+    vertical-align: middle; /* Align text vertically */
+}
+
+.bullets-holder{
+    margin-top: 32px;
+}
+
+@media (max-width: 1500px) {
+    .cells-row{
+        
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cells-row{
+        
+        flex-direction: column;
+    }
+
+    .cell{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .cells-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #EDF3F2;
+        border-radius: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+}

@@ -1,0 +1,419 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.landing-hero-main {
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+}
+
+.landing-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.landing-left {
+    width: 40%;
+}
+
+.landing-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+}
+
+.blob {
+    position: relative;
+    width: 150%;
+    /* Ensures the width expands to match the pseudo-element */
+    height: 0;
+    /* Set height to 0 */
+    padding-top: 120vh;
+    /* This creates a height equal to 120vh */
+    background-color: #E6F4ED;
+    /* Example background color */
+    animation: blobAnimation 10s infinite;
+    /* Adjust time as needed */
+    transform: translateX(-25%);
+    overflow: hidden;
+    /* Ensures no overflow from the pseudo-element */
+}
+
+.blob::before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    /* This makes the element square, as the padding-top is relative to the width of the element */
+    background-color: inherit;
+    /* Inherits the background color from the parent .blob class */
+    border-radius: 49% 51% 50% 50% / 30% 68% 32% 70%;
+    /* Add your initial border-radius here */
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: inherit;
+    /* Inherits the animation from the parent .blob class */
+}
+
+.blob img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    /* Cover the blob area, may crop the image */
+    transform: translateX(15%);
+}
+
+@keyframes blobAnimation {
+
+    0%,
+    100% {
+        border-radius: 49% 51% 50% 50% / 30% 68% 32% 70%;
+    }
+
+    50% {
+        border-radius: 49% 51% 50% 50% / 30% 52% 48% 70%;
+    }
+}
+
+.tmp {
+    height: 100vh;
+}
+
+.right-content-wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.right-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(5%);
+}
+
+.hero-header2{
+    color: #ADB2AF;
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.25rem, 1.0671rem + 0.5854vw, 2rem);
+}
+
+.hero-header1{
+    color: #323232;
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.5rem, 1.2561rem + 0.7805vw, 2.5rem);;
+}
+
+.greenspan{
+    color: #126A66;
+}
+
+.hero-paragraph2{
+    color: #323232;
+    font-family: 'FuturaRegular';
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(1rem, 0.939rem + 0.1951vw, 1.25rem);
+}
+
+.icons-holder{
+    margin-top: 80px;
+    width: 100%;
+}
+
+.icon-row{
+    width: 100%;
+    display: flex;
+}
+
+.icon-cell{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.icon-cell:hover .hero-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .icon-cell:hover .icon-header{
+    color: #126A66;
+  }
+
+.cell-wrapper{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-icon{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.icon-header{
+    text-align: center;
+    color: #323232;
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(0.625rem, 0.5335rem + 0.2927vw, 1rem);
+}
+
+.icon-row:nth-child(1) .icon-cell:nth-child(1) { 
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+
+}
+
+.icon-row:nth-child(1) .icon-cell:nth-child(2) { 
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+
+}
+
+.icon-row:nth-child(1) .icon-cell:nth-child(3) { 
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+
+}
+
+.icon-row:nth-child(1) .icon-cell:nth-child(4) { 
+    border-bottom: 1px solid #DFDFDF;
+
+}
+
+.icon-row:nth-child(2) .icon-cell:nth-child(1) { 
+    border-right: 1px solid #DFDFDF;
+
+}
+
+.icon-row:nth-child(2) .icon-cell:nth-child(2) { 
+    border-right: 1px solid #DFDFDF;
+
+}
+
+.icon-row:nth-child(2) .icon-cell:nth-child(3) { 
+    border-right: 1px solid #DFDFDF;
+
+}
+
+.icon-row:nth-child(2) .icon-cell:nth-child(4) { 
+
+}
+
+.mobile-main{
+    display: none;
+}
+
+.icon-row a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Optional: Ensures link color matches the surrounding text */
+    cursor: pointer; /* Optional: Makes it clear that the element is clickable */
+    transform: translateY(4px);
+  }
+  
+  .icon-row a:visited {
+   padding-bottom: 0;
+  }
+  
+  .icon-row a::before {
+    content: none; /* This makes the pseudo-element not generate any content */
+    display: none;
+  }
+  
+
+@media (max-width: 1400px) {
+    .landing-right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+    }
+
+    .right-content-wrapper{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mobile-main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .desktop-main{
+        display: none;
+    }
+
+    .mobile-main-wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-content-holder{
+        margin-top: 128px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .blob-holder{
+        height: 90vh;
+        z-index: 1;
+        transform: translateY(-10%);
+        overflow: hidden;
+        
+    }
+
+    .blob {
+        position: relative;
+        width: 130%;
+        /* Ensures the width expands to match the pseudo-element */
+        height: 0;
+        /* Set height to 0 */
+        padding-top: 100vh;
+        /* This creates a height equal to 120vh */
+        background-color: #E6F4ED;
+        /* Example background color */
+        animation: blobAnimation 9s infinite;
+        /* Adjust time as needed */
+        transform: translateX(-35%);
+        overflow: hidden;
+        /* Ensures no overflow from the pseudo-element */
+    }
+    
+    .blob::before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: 100%;
+        /* This makes the element square, as the padding-top is relative to the width of the element */
+        background-color: inherit;
+        /* Inherits the background color from the parent .blob class */
+        border-radius: 49% 51% 50% 50% / 30% 68% 32% 70%;
+        /* Add your initial border-radius here */
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: inherit;
+        /* Inherits the animation from the parent .blob class */
+    }
+    
+    .blob img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        /* Cover the blob area, may crop the image */
+        transform: translateX(45%) translateY(10%);
+    }
+
+    .icon-cell{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .icon-row:nth-child(1) .icon-cell:nth-child(1) { 
+        border-right: 1px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+    
+    }
+
+    .icon-row:nth-child(1) .icon-cell:nth-child(2) { 
+        border-right: 0px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+    
+    }
+
+    .icon-row:nth-child(2) .icon-cell:nth-child(1) { 
+        border-right: 1px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+    
+    }
+
+    .icon-row:nth-child(2) .icon-cell:nth-child(2) { 
+        border-right: 0px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+    
+    }
+
+    .icon-row:nth-child(3) .icon-cell:nth-child(1) { 
+        border-right: 1px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+    
+    }
+
+    .icon-row:nth-child(3) .icon-cell:nth-child(2) { 
+        border-right: 0px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+    
+    }
+
+    .icon-row:nth-child(4) .icon-cell:nth-child(1) { 
+        border-right: 1px solid #DFDFDF;
+        border-bottom: 0px solid #DFDFDF;
+    
+    }
+
+    .icon-row:nth-child(4) .icon-cell:nth-child(2) { 
+        border-right: 0px solid #DFDFDF;
+        border-bottom: 0px solid #DFDFDF;
+    
+    }
+
+    .icon-header{
+        text-align: center;
+        color: #323232;
+        font-family: 'FuturaBold';
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(0.75rem, 0.5651rem + 1.0959vw, 1.25rem);
+    }
+
+    .icon-last-wrappert{
+        margin-bottom: 64px;
+    }
+}

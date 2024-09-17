@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.landingH-main{
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 64px;
+    position: relative;
+    overflow: hidden;
+}
+
+.widthme{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.green-blob{
+    width: 50%;
+    height: 0%;
+    padding-top: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #E6F4ED;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(50%,50%);
+    animation: scaleBlob 9s infinite; /* Adjust the duration as needed */
+
+}
+
+@keyframes scaleBlob {
+    0%, 100% {
+      transform: translate(50%, 50%) scale(1);
+    }
+    50% {
+      transform: translate(50%, 50%) scale(1.1);
+    }
+  }
+
+.horion-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hvl{
+    width: 40%;
+}
+
+.hvr{
+    width: 60%;
+}
+
+.horion-wrapper2{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.horion-video{
+    width: 80%;
+    
+}
+
+.razlaga-main{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #E6F4ED;
+}
+
+.horion-row{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.horiongreen{
+    font-size: clamp(2rem, 1.7632rem + 1.4035vw, 4rem);
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    color: #126A66;
+}
+
+.horion-r{
+    display: flex;
+    align-items: center;
+}
+
+.horion-raz{
+    font-size: clamp(1rem, 0.8816rem + 0.7018vw, 2rem);
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    color: #323232;
+}
+
+.bullet-roww{
+    display: flex;
+    align-items: center;
+
+}
+
+.green-bullet{
+    width: 7px;
+    height: 0px;
+    padding-top: 7px;
+    border-radius: 50%;
+    background-color: #126A66;
+    margin-right: 12px;
+    margin-top: 12px;
+
+}
+
+.fr{
+    margin-top: 12px;
+}
+
+.horion-razlaga{
+    font-size: clamp(1rem, 0.939rem + 0.1951vw, 1.25rem);
+    font-family: 'FuturaRegular';
+    font-weight: 400;
+    color: #323232;
+    margin: 0;
+    margin-top: 12px;
+}
+
+@media (max-width: 1600px) {
+    .horion-video{
+        width: 70%;
+        margin-bottom: 64px
+    }
+}
+
+@media (max-width: 1000px) {
+    .widthme{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    .horion-video{
+        width: 100%;
+        margin-bottom: 64px
+    }
+    .horion-wrapper{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .hvr{
+        width: 100%;
+    }
+
+    .hvl{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .landingH-main{
+        padding-top: 100px;
+        
+    }
+    
+
+}
+
+@media (max-width: 350px) {
+    .horion-row{
+        flex-direction: column;
+    }
+
+    .horion-raz{
+        margin-left: 0;
+    }
+}

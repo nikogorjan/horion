@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.landingzanositev-main{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 64px;
+    display: flex;
+    margin-top: 120px;
+}
+
+.lzanositev-left{
+    width: 60%;
+
+}
+
+.lzanositev-right{
+    width: 40%;
+    position: relative;
+    
+}
+
+.hero-video-zanositev{
+    width: 100%;
+}
+
+.bubble3{
+    width: 100%;
+    height: 0; /* Make the height initially 0 */
+    padding-top: 100%;
+    background-color: #CEFFE7;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    position: absolute;
+    left: -30%;
+    top: 0;
+}
+
+@media (max-width: 1100px) {
+    .landingzanositev-main{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 64px;
+        display: flex;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .lzanositev-left{
+        width: 100%;
+        position: relative;
+    
+    }
+    
+    .lzanositev-right{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .bubble3{
+        width: 70%;
+        height: 0; /* Make the height initially 0 */
+        padding-top: 70%;
+        background-color: #CEFFE7;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        position: relative;
+        transform: translate(45%,-10%);
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .landingzanositev-main{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 64px;
+        display: flex;
+        margin-top: 70%;
+        flex-direction: column;
+    }
+
+    .bubble3{
+        width: 100%;
+        height: 0; /* Make the height initially 0 */
+        padding-top: 100%;
+        background-color: #CEFFE7;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(30%);
+
+    }
+}

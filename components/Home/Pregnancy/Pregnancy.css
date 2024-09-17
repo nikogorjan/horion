@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.pregnancy-main{
+    width: 100%;
+    margin-bottom: 121px;
+}
+
+.pr-video-wrapper{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.pr-content-wrapper{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered{
+    text-align: center;
+}
+
+.marginpr{
+    margin-top: 24px;
+}
+
+@media (max-width: 1000px) {
+    .pregnancy-main{
+        width: 100%;
+        margin-bottom: 121px;
+        margin-top: 121px;
+
+    }
+
+    .pr-video-wrapper{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .pr-content-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+}

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.mobile-content-main-nav{
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .mobile-content-main-nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 9px;
+
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 74px !important;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        opacity: 1;
+        z-index: 1;
+    
+        border-bottom: 1px solid #DFDFDF;
+    }
+
+    .lnav-row2{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .lnav-hidden{
+        width: 85%;
+        margin: 0 auto;
+        border-left: 1px solid #DFDFDF;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        z-index: 3;
+      }
+
+      .expand2{
+        min-height: 100vh;
+        overflow-y: auto; /* Enables vertical scrolling */
+        z-index: 99;
+
+      }
+
+      .hide-all-extended .lnav-extended {
+        display: none;
+    }
+
+    .lnav-extended{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
+    
+  }

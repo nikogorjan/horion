@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'FuturaRegular';
+  src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'FuturaLight';
+  src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+
+  .blog-main{
+    
+  }

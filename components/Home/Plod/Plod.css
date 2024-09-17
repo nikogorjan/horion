@@ -1,0 +1,11 @@
+.plod-main{
+    margin-top: 121px;
+}
+
+
+
+@media (max-width: 1000px) {
+        .wider-video{
+            width: 100%;
+    }
+}

@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+
+ 
+.Lnav-main{
+    width: 284px;
+    height: calc(100vh - 121px);
+    border-right: 1px solid #DFDFDF;
+    overflow-y: auto; /* Makes vertical overflow scrollable */
+    overflow-x: hidden; /* Hides horizontal overflow */
+    flex-shrink: 0; /* Prevents Lnav-main from shrinking */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 114px; /* Adjust this value based on your header's height or desired offset */
+
+}
+
+.lnavigations-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
+
+.lnav-nav{
+    font-family: 'FuturaMedium';
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #1D1D1D;
+    cursor: pointer;
+}
+
+.lnav-hidden-nav{
+    font-family: 'FuturaMedium';
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #1D1D1D;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-left: 12px;
+}
+
+.lnav-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lnav-arrow {
+    position: relative;
+    width: 14px; /* Adjust size as needed */
+    height: 14px; /* Adjust size as needed */
+    transform: rotate(-90deg);
+    transition: all 0.3s;
+  }
+
+  .tilt{
+    transform: rotate(0deg); /* Adjusts the arrow to point downwards */
+
+  }
+  
+  .lnav-arrow::before,
+  .lnav-arrow::after {
+    content: '';
+    position: absolute;
+    bottom: 10px; /* Adjust positioning as needed */
+    width: 9px; /* Length of the arrow lines */
+    height: 1px; /* Thickness of the arrow lines */
+    background-color: #1D1D1D; /* Color of the arrow */
+  }
+  
+  .lnav-arrow::before {
+    transform: rotate(45deg);
+    left: 0;
+  }
+  
+  .lnav-arrow::after {
+    transform: rotate(-45deg);
+    left: 6px; /* Adjust to align the arrows properly */
+  }
+
+  .lnav-hidden{
+    width: 85%;
+    margin: 0 auto;
+    border-left: 1px solid #DFDFDF;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .lnav-hidden.visible {
+    max-height: 1700px; /* Adjust as needed */
+  }
+
+
+  .Lnav-main::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Customizes the track (or background) of the scrollbar */
+.Lnav-main::-webkit-scrollbar-track {
+    background: white; /* Light grey background */
+}
+
+/* Customizes the draggable scrolling handle */
+.Lnav-main::-webkit-scrollbar-thumb {
+    background: #888; /* Darker grey scrollbar handle */
+}
+
+/* Optional: changes the scrollbar handle's color when it's hovered or clicked */
+.Lnav-main::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Even darker grey on hover */
+}
+
+.lnav-row a {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Optional: Ensures link color matches the surrounding text */
+  cursor: pointer; /* Optional: Makes it clear that the element is clickable */
+  transform: translateY(4px);
+}
+
+.lnav-row a:visited {
+ padding-bottom: 0;
+}
+
+.lnav-row a::before {
+  content: none; /* This makes the pseudo-element not generate any content */
+  display: none;
+}
+
+.lnav-hidden a {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Optional: Ensures link color matches the surrounding text */
+  cursor: pointer; /* Optional: Makes it clear that the element is clickable */
+  transform: translateY(4px);
+}
+
+.lnav-hidden a:visited {
+ padding-bottom: 0;
+}
+
+.lnav-hidden a::before {
+  content: none; /* This makes the pseudo-element not generate any content */
+  display: none;
+}
+
+
+@media (max-width: 750px) {
+  .Lnav-main{
+      display: none;
+  }
+}

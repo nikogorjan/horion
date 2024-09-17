@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.mid-main {
+    flex-grow: 1;
+    /* Takes up the remaining space */
+    padding-bottom: 10vh;
+
+}
+
+.mid-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.doc-main-header {
+    font-family: 'FuturaMedium';
+    font-weight: 400;
+    font-style: normal;
+    color: #1D1D1D;
+}
+
+.doc-main-paragraph {
+    font-family: 'FuturaRegular';
+    font-weight: 400;
+    font-style: normal;
+    color: #1D1D1D;
+}
+
+.questiongraph {
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: italic;
+    color: #1D1D1D;
+}
+
+.doc-main-subheader {
+    font-family: 'FuturaMedium';
+    font-size: clamp(0.75rem, 0.6908rem + 0.3509vw, 1.25rem);
+    font-weight: 400;
+    font-style: normal;
+    color: #1D1D1D;
+    font-size: clamp(1.25rem, 1.1612rem + 0.5263vw, 2rem);
+    margin-top: 0;
+}
+
+.thesection-div {
+    transform: translateY(-80px);
+    margin-bottom: 64px;
+}
+
+.prva-m-video {
+    width: 100%;
+}
+
+.ant-table-cell {
+    font-family: 'FuturaRegular';
+    font-weight: 400;
+    font-style: normal;
+    color: #1D1D1D;
+
+}
+
+.ant-pagination {
+    display: none !important;
+}
+
+.table-margin {
+    margin-top: 40px;
+}
+
+.cas-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cas-branja {
+    font-family: 'FuturaMedium';
+    font-size: clamp(0.75rem, 0.6908rem + 0.3509vw, 1.25rem);
+    font-weight: 400;
+    font-style: normal;
+    color: #126A66;
+}
+
+.cas-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cas-branja {
+    font-family: 'FuturaMedium';
+    font-size: clamp(0.75rem, 0.6908rem + 0.3509vw, 1.25rem);
+    font-weight: 400;
+    font-style: normal;
+    color: #126A66;
+}
+
+.the-grid {
+    width: 100%;
+    display: flex;
+}
+
+.grid-left {
+    width: 50%;
+}
+
+.grid-right {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.grid-img {
+    width: 100%;
+}
+
+@media (max-width: 1300px) {
+    .the-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-left {
+        width: 100%;
+    }
+
+    .grid-right {
+        width: 100%;
+        margin-left: 0px;
+
+    }
+}
+
+@media (max-width: 750px) {
+    .thesection-div {
+        transform: translateY(-120px);
+
+    }
+
+    
+}

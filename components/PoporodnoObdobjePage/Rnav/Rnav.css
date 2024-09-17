@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.Rnav-main{
+    order: 9999;
+    display: block;
+    width: 14rem;
+    flex-shrink: 0;
+    background-color: #F5F5F8;
+    flex-shrink: 0; /* Prevents Lnav-main from shrinking */
+    height: calc(100vh - 151px);
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 114px; /* Adjust this value based on your header's height or desired offset */
+}
+
+.promo-video{
+    width: 100%;
+}
+
+.contact-right{
+    margin: 12px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.c-row{
+    display: flex;
+    align-items: center;
+}
+
+.icon-holder{
+    width: 32px;
+    height: 32px;
+}
+
+.icon-p{
+    font-family: 'FuturaMedium';
+        font-weight: 400;
+    font-style: normal;
+    color: #1D1D1D;
+    margin-left: 24px;
+}
+
+.r-icon{
+    width: 100%;
+}
+
+.novica-img{
+    width: 100%;
+}
+
+.novica-div{
+    border: 1px solid #F5F5F8;
+}
+
+.blog-content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+
+}
+
+.blog-hint {
+    color: #ADB2AF;
+    font-size: clamp(0.875rem, 0.8306rem + 0.2632vw, 1.25rem);
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blog-header {
+    color: #323232;
+    font-size: clamp(1rem, 0.9408rem + 0.3509vw, 1.0rem);
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blog-paragraph {
+    color: #323232;
+    font-size: clamp(0.75rem, 0.7204rem + 0.1754vw, 1rem);
+    font-family: 'FuturaRegular';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.underlined-button {
+    margin-top: 24px;
+}
+
+a,
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 4px;
+    font-family: 'FuturaBold';
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(0.75rem, 0.5897rem + 0.2564vw, 1rem);
+    color: #126A66;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #126A66, #126A66);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /*transition: background-size .2s ease-in;*/
+}
+
+@keyframes hoverAnimation { 
+    0% {
+        background-size: 100% 2px;
+        background-position: right bottom;
+    }
+
+    50% {
+        background-size: 0% 2px;
+
+    }
+
+    100% {
+        background-size: 0% 2px;
+
+    }
+}
+
+a:hover::before {
+    animation: hoverAnimation .4s ease-in forwards;
+}
+
+@media (max-width: 1000px) {
+    .Rnav-main{
+        display: none;
+    }
+}

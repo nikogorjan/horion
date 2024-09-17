@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.landing-all-main {
+    padding-top: 200px;
+    padding-bottom: 64px;
+    background-color: #F5F5F8;
+    
+}
+
+.all-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.matg{
+    display: inline-block; /* Allows the element to become as wide as its content */
+
+    padding: 5px;
+    color: #323232;
+    font-size: 16px;
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(230,244,237,0.65);
+
+}
+
+.math{
+    color: #323232;
+    font-size: clamp(2rem, 1.7632rem + 1.4035vw, 4rem);
+
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.matp{
+    font-size: clamp(1rem, 0.939rem + 0.1951vw, 1.25rem);
+    font-family: 'FuturaRegular';
+    font-weight: 400;
+    color: #323232;
+    margin-bottom: 121px;
+
+    
+}
+
+.block1{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+.block2{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.b1{
+    width: 33.333333%;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+}
+
+.b1w{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px; /* Example height - adjust based on your needs */
+
+}
+
+.b11w{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+
+.b1h{
+    color: #323232;
+    font-size: 24px;
+
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.b1p{
+    font-size: clamp(0.875rem, 0.8306rem + 0.2632vw, 1.25rem);
+    font-family: 'FuturaRegular';
+    font-weight: 400;
+    color: #323232;
+    margin: 0;
+}
+
+.hvrr {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+    text-align: left;
+    
+  }
+  
+  .hvr-cell {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 33.333333%;
+    
+
+    /* No flex-grow or flex-basis specified here */
+  }
+  
+  .vv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .horion-video2{
+    width: 100%;
+  }
+
+  .horion-video22{
+    width: 100%;
+    margin-top: 32px;
+    
+  }
+
+  .pv{
+    margin-top: 24px;
+  }
+
+  .matg{
+    display: inline-block; /* Allows the element to become as wide as its content */
+
+    padding: 5px;
+    color: #323232;
+    font-size: 16px;
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(230,244,237,0.65);
+
+}
+
+.keyword{
+    padding: 3px !important;
+    font-size: 12px !important;
+    margin-right: 12px;
+    white-space: nowrap; /* Prevents the paragraph from breaking into multiple lines */
+    margin-bottom: 12px;
+}
+
+.martop{
+    margin-top: 64px;
+}
+
+  @media (max-width: 1400px) {
+    .all-wrapper{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+  }
+
+  @media (max-width: 1000px) {
+    .all-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .landing-all-main {
+        padding-top:100px;
+        padding-bottom: 64px;
+        background-color: #F5F5F8;
+        
+    }
+
+    .b11{
+        margin-top: 64px;
+    }
+    
+  }
+
+  @media (max-width: 860px) {
+    .block1{
+        flex-direction: column;
+    }
+
+    .b1{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .hvrr{
+        flex-direction: column;
+    }
+
+    .hvr-cell{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .block2{
+        flex-direction: column;
+    }
+
+    .keyword{
+        padding: 3px !important;
+        font-size: 12px !important;
+        white-space: nowrap; /* Prevents the paragraph from breaking into multiple lines */
+        margin-bottom: 12px;
+    }
+  }

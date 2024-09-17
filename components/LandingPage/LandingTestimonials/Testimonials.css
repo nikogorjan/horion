@@ -1,0 +1,522 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.testimonials-main{
+    transform: translateY(0px);
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 64px;
+    position: relative;
+
+}
+
+.testimonials-wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.testimonials-holder{
+    width: 100%;
+}
+
+.navigations-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.bullets{
+    display: flex;
+}
+
+.testimonial-bullet{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:  rgba(50,50,50, 0.1);
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.bullet-active{
+    background-color:  rgba(50,50,50, 1.0);
+
+}
+
+.testimonials-holder-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.narekovaj-holder{
+    width: 128px;
+    
+}
+
+.slika-holder{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 2px solid #323232;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+
+.selected-img{
+    width: 100%;
+}
+
+.narekovaj-img{
+    width: 100%;
+}
+
+.testimonial-paragraph{
+    font-family: 'FuturaRegular';
+    font-weight: 400;
+    font-style: normal;
+   font-size: clamp(0.875rem, 0.8306rem + 0.2632vw, 1.25rem);
+    text-align: left;
+    line-height: normal;
+    width: 85%;
+    margin-bottom: 32px;
+    transition: all 0.3s ease;
+}
+
+.green-blob2{
+    width: 30%;
+    height: 0%;
+    padding-top: 30%;
+    position: absolute;
+    left: -0%;
+    top: -10%;
+    background-color: #E6F4ED;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+    animation: scaleBlob 9s infinite; /* Adjust the duration as needed */
+
+}
+
+
+.translateandchange{
+    opacity: 0;
+    transform: translateX(-32px);
+}
+
+.testimonial-name{
+    font-family: 'FuturaMedium';
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1rem, 0.878rem + 0.3902vw, 1.5rem);
+    transition: all 0.3s ease;
+
+}
+
+.nameandline-rov{
+    display: flex;
+    align-items: center;
+
+}
+
+.testimonial-line{
+    width: 64px;
+    height: 2px;
+    background-color: #323232;
+    margin-right: 24px;
+    transition: all 0.3s ease;
+}
+
+.changesize{
+    width: 0px;
+}
+
+.fadeaway{
+    opacity: 0;
+}
+
+.arrows{
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+}
+
+.button-next, .button-prev{
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border: 2px solid #323232;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-next:hover{
+    background-color: #323232;
+}
+
+.button-prev:hover{
+    background-color: #323232;
+}
+
+.button-next:hover .arrow,
+.button-next:hover .arrow::before,
+.button-next:hover .arrow::after {
+  background-color: white; /* Change arrow color to black on hover */
+}
+
+.button-prev:hover .arrow,
+.button-prev:hover .arrow::before,
+.button-prev:hover .arrow::after {
+  background-color: white; /* Change arrow color to black on hover */
+}
+
+
+.arrow {
+    display: block;
+    position: relative;
+    width: 15px; /* Length of the arrow */
+    height: 2px; /* Thickness of the arrow */
+    background-color: #323232; /* Arrow color */
+  }
+  
+  /* Arrow for the previous button "<" */
+  .button-prev .arrow::before {
+    content: '';
+    position: absolute;
+    top: -3px; /* Adjust distance from the center line */
+    left: 7px;
+    width: 10px; /* Length of the angled line */
+    height: 2px; /* Thickness of the angled line */
+    background-color: #323232;
+    transform: rotate(45deg); /* Angle of the line */
+  }
+  
+  .button-prev .arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; /* Adjust distance from the center line */
+    left: 7px;
+    width: 10px; /* Length of the angled line */
+    height: 2px; /* Thickness of the angled line */
+    background-color: #323232;
+    transform: rotate(-45deg); /* Angle of the line */
+  }
+  
+  /* Arrow for the next button ">" */
+  .button-next .arrow::before {
+    content: '';
+    position: absolute;
+    top: -3px; /* Adjust distance from the center line */
+    right: 7px;
+    width: 10px; /* Length of the angled line */
+    height: 2px; /* Thickness of the angled line */
+    background-color: #323232;
+    transform: rotate(-45deg); /* Angle of the line */
+  }
+  
+  .button-next .arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; /* Adjust distance from the center line */
+    right: 7px;
+    width: 10px; /* Length of the angled line */
+    height: 2px; /* Thickness of the angled line */
+    background-color: #323232;
+    transform: rotate(45deg); /* Angle of the line */
+  }
+
+  .matpepe{
+    font-size: clamp(1rem, 0.939rem + 0.1951vw, 1.25rem);
+    font-family: 'FuturaRegular';
+    font-weight: 400;
+    color: #323232;
+    margin-bottom: 0px;
+  }
+
+  .your-email-wrapper{
+   
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 121px;
+  }
+
+  .question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 64px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.submit-button{
+    margin-top: 32px;
+    width: 100px;
+}
+
+label{
+    margin-top: 32px;
+}
+
+  @media (max-width: 1500px) {
+    .green-blob2{
+        width: 30%;
+        height: 0%;
+        padding-top: 30%;
+        position: absolute;
+        left: -0%;
+        top: 10%;
+        background-color: #E6F4ED;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%,-50%);
+        animation: scaleBlob 9s infinite; /* Adjust the duration as needed */
+    
+    }
+
+    .narekovaj-holder{
+        width: 80px;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .green-blob2{
+        width: 20%;
+        height: 0%;
+        padding-top: 20%;
+        position: absolute;
+        left: -0%;
+        top: 10%;
+        background-color: #E6F4ED;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%,-50%);
+        animation: scaleBlob 9s infinite; /* Adjust the duration as needed */
+    
+    }
+  }
+
+@media (max-width: 1100px) {
+    .green-blob2{
+        width: 30%;
+        height: 0%;
+        padding-top: 30%;
+        position: absolute;
+        left: -5%;
+        top: 15%;
+        background-color: #E6F4ED;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%,-50%);
+        animation: scaleBlob 9s infinite; /* Adjust the duration as needed */
+    
+    }
+
+    .testimonials-main{
+        transform: translateY(-64px);
+        width: 100%;
+    
+    }
+    
+    .testimonials-wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .testimonials-holder-row{
+       
+        margin-bottom: 0px;
+    }
+
+    .narekovaj-holder{
+        width: 64px;
+        
+    }
+    
+    .slika-holder{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: 2px solid white;
+        overflow: hidden;
+    }
+
+    .testimonial-paragraph{
+        font-family: 'FuturaRegular';
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(0.875rem, 0.8306rem + 0.2632vw, 1.25rem);
+        
+        text-align: left;
+        line-height: normal;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .testimonial-line{
+        width: 32px;
+       
+    }
+
+    .changesize{
+        width: 0px;
+    }
+
+    .testimonial-bullet{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color:  rgba(50,50,50, 0.1);
+        margin-right: 12px;
+        cursor: pointer;
+    }
+
+    .bullet-active{
+        background-color:  rgba(50,50,50, 1.0);
+    
+    }
+
+    .button-next, .button-prev{
+        width: 48px;
+        height: 48px;
+        background-color: white;
+        border: 2px solid #323232;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .button-next:hover{
+        background-color: #323232;
+    }
+}
+
+@media (max-width: 1000px) {
+    .testimonials-main{
+        transform: translateY(0px);
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 64px;
+        position: relative;
+    
+    }
+}
+
+@media (max-width: 750px) {
+    .green-blob2{
+        width: 50%;
+        height: 0%;
+        padding-top: 50%;
+        position: absolute;
+        left: -15%;
+        top: 25%;
+        background-color: #E6F4ED;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%,-50%);
+        animation: scaleBlob 9s infinite; /* Adjust the duration as needed */
+    
+    }
+
+    .thep{
+        margin-bottom: 64px !important;
+    }
+
+    .navigations-row{
+        flex-direction: column;
+    }
+
+    .arrows{
+        justify-content: flex-end;
+        margin-top: 12px;
+    }
+
+    .matpepe{
+        
+        margin-bottom: 24px;
+      }
+
+      .your-email-wrapper{
+      }
+
+      .your-email-wrapper{
+   
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 64px;
+
+      }
+
+      .question-form {
+        
+        margin-top: 64px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navigations-row{
+        flex-direction: column;
+    }
+
+    .arrows{
+        justify-content: flex-end;
+        margin-top: 12px;
+    }
+}

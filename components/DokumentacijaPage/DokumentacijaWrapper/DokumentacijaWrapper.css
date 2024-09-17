@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.DokumentacijaWrapper-main{
+    box-sizing: border-box;
+}
+
+.ww{
+    padding-top: 8%;
+    padding-bottom: 2.5rem;
+    flex-direction: row;
+    display: flex;
+    align-items: stretch; /* Adjust as needed */
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: clamp(0rem, -40.5396rem + 52.9496vw, 23rem);
+    margin-right: clamp(0rem, -40.5396rem + 52.9496vw, 23rem);
+
+}

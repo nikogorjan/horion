@@ -1,0 +1,485 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.landing-about-main {
+    padding: 10vh 0;
+    padding-bottom: 0px;
+    background-color: #F5F5F8;
+    
+}
+
+.kdosmo-wrapper{
+    /*padding-top: 121px;*/
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 0;
+}
+
+.alignme{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.midmadg{
+    align-self: center;
+}
+
+.smallwidth{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+.leftalign{
+    text-align: left;
+    width: 50%;
+}
+
+
+.width-wrapper{
+    justify-content: space-between;
+}
+
+.leftalign2{
+    text-align: left;
+    width: 50%;
+    margin-left: 64px;
+    
+    
+}
+
+.rightalign2{
+    width: 50%;
+}
+
+.infoe-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoe-cell{
+    width: 45%;
+}
+
+.relume-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.smallheader{
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+    color: #323232;
+    font-size: 24px;
+}
+
+.fullimg{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.landing-about-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-blog-holder {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10vh;
+}
+
+.blog-row {
+    display: flex;
+
+}
+
+.blog-row-left {
+    width: 50%;
+}
+
+.blog-row-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-row-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.blog-content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.blog-hint {
+    color: #ADB2AF;
+    font-size: clamp(0.875rem, 0.8306rem + 0.2632vw, 1.25rem);
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blog-header {
+    color: #323232;
+    font-size: clamp(1rem, 0.9408rem + 0.3509vw, 1.5rem);
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blog-paragraph {
+    color: #323232;
+    font-size: clamp(0.875rem, 0.8306rem + 0.2632vw, 1.25rem);
+        font-family: 'FuturaRegular';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.underlined-button {
+    margin-top: 48px;
+}
+
+a,
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 4px;
+    font-family: 'FuturaBold';
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(0.75rem, 0.5897rem + 0.2564vw, 1rem);
+    color: #126A66;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #126A66, #126A66);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /*transition: background-size .2s ease-in;*/
+}
+
+@keyframes hoverAnimation {
+    0% {
+        background-size: 100% 2px;
+        background-position: right bottom;
+    }
+
+    50% {
+        background-size: 0% 2px;
+
+    }
+
+    100% {
+        background-size: 0% 2px;
+
+    }
+}
+
+a:hover::before {
+    animation: hoverAnimation .4s ease-in forwards;
+}
+
+.about-paragraphs-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-paragraphs {
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.keywords-row{
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to a new line when there is no space */
+
+}
+
+.kmargin{
+    margin-left: 12px;
+}
+
+.matg{
+    display: inline-block !important; /* Allows the element to become as wide as its content */
+
+    padding: 5px;
+    color: #323232;
+    font-size: 16px;
+    font-family: 'FuturaBold';
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(230,244,237,0.65);
+
+}
+
+.keyword{
+    padding: 3px !important;
+    font-size: 12px !important;
+    white-space: nowrap; /* Prevents the paragraph from breaking into multiple lines */
+    margin-bottom: 12px;
+}
+
+.nopadcell{
+    padding: 0 !important;
+}
+
+.cellsimg{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;  /* Rounds the top-left corner */
+    border-top-right-radius: 10px; 
+    border-radius: 10px;
+}
+
+.b2w{
+    min-height: 300px !important;
+}
+
+.hep{
+    margin-bottom: 0px !important;
+}
+
+.thesection-div{
+    transform: translateY(-100px);
+}
+
+.martop{
+    margin-top: 64px;
+}
+
+.faq-wrapper{
+    width: 35%;
+    margin: 0 auto;
+}
+
+.faq {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    transition: height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+
+.faq::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.01em; /* Adjust the height to make it thinner */
+    background-color: #323232;
+}
+
+
+
+.faq-h{
+    font-family: 'FuturaMedium';
+    font-style: normal;
+    font-weight: 400;
+    color: #161B22;
+    font-size: clamp(1rem, 0.9408rem + 0.3509vw, 1.5rem);
+
+        margin: 0;
+    margin-top: 10px;
+}
+
+.thefqwrapper{
+    
+}
+.faq-p{
+    font-family: 'FuturaLight';
+    font-style: normal;
+    font-weight: 400;
+    color: #323232;
+    font-size: clamp(0.875rem, 0.8306rem + 0.2632vw, 1.25rem);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.faq:hover{
+    height: 180px;
+
+}
+
+
+.faq:hover .faq-p{
+opacity: 1;
+}
+
+@media screen and (max-width: 1500px) {
+    
+
+    .smallwidth{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        
+    }
+
+    .about-blog-holder{
+        width: 80%;
+    }
+
+    .leftalign{
+        width: 45%;
+    }
+
+    .faq-wrapper{
+        width: 40%;;
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+    
+
+    .smallwidth{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        
+    }
+
+    .about-blog-holder{
+        width: 100%;
+    }
+
+    .kdosmo-wrapper{
+        flex-direction: column;
+    }
+
+    .leftalign{
+        width: 100%;
+    }
+
+    .faq-wrapper{
+        width: 100%;
+    }
+
+
+
+    .leftalign2{
+        text-align: left;
+        width: 100%;
+        margin-left:0px;
+        margin-top: 64px;
+        
+        
+    }
+    
+    .rightalign2{
+        width: 100%;
+    }
+    
+    
+}
+
+
+@media (max-width: 1000px) {
+    .landing-about-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .kdosmo-wrapper{
+    }
+
+    
+.landing-about-main {
+    padding-top: 100px;
+    padding-bottom: 64px;
+    background-color: #F5F5F8;
+    
+}
+}
+
+@media (max-width: 750px) {
+    .blog-row{
+        flex-direction: column;
+    }
+
+    .blog-row-left{
+        width: 100%;
+    }
+
+    .blog-row-right{
+        width: 100%;
+        padding-top: 2em;
+    padding-bottom: 4em;
+    }
+
+    .keyword{
+        padding: 3px !important;
+        font-size: 12px !important;
+        white-space: nowrap; /* Prevents the paragraph from breaking into multiple lines */
+        margin-bottom: 12px;
+    }
+
+    .faq-wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .infoe-row{
+        flex-direction: column;
+    }
+
+    .infoe-cell{
+        width: 100%
+
+    }
+}

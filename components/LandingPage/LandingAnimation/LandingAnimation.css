@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.animation-main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 64px;
+    background-color: #F5F5F8;
+    padding: 10vh 0;
+}
+
+
+.transformme{
+}
+
+.video-wrappser{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-video{
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.thesection-div{
+    transform: translateY(-100px);
+}
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .animation-main{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-video{
+        width: 90%;
+        transform: translateX(-0%);
+    }
+
+}
+
+@media (max-width: 500px) {
+    .transformme{
+    }
+
+    .hero-video{
+        width: 90%;
+    }
+
+    .marp{
+        margin-bottom: 64px !important;
+    }
+
+    .animation-main{
+       
+    
+    }
+
+    .mobile{
+        display: flex;
+    }
+    
+    .desktop{
+        display: none;
+    }
+    
+    
+
+}

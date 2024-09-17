@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'FuturaRegular';
+    src: url('../../../public/Fonts/Futura\ Book\ font.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../../../public/Fonts/futura\ light\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../../public/Fonts/futura\ medium\ bt.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../public/Fonts/Futura\ Heavy\ font.ttf') format('woff2');
+}
+
+.Rnav-main{
+    order: 9999;
+    display: block;
+    width: 14rem;
+    flex-shrink: 0;
+    background-color: #F5F5F8;
+    flex-shrink: 0; /* Prevents Lnav-main from shrinking */
+    height: 364px !important;
+}
+
+.promo-video{
+    width: 100%;
+}
+
+.contact-right{
+    margin: 12px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.c-row{
+    display: flex;
+    align-items: center;
+}
+
+.icon-holder{
+    width: 32px;
+    height: 32px;
+}
+
+.icon-p{
+    font-family: 'FuturaMedium';
+        font-weight: 400;
+    font-style: normal;
+    color: #1D1D1D;
+    margin-left: 24px;
+}
+
+.r-icon{
+    width: 100%;
+}
