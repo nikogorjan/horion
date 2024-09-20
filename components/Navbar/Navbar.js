@@ -80,6 +80,7 @@ const Navbar = () => {
         { title: 'Spustitev maternice', link: '/dokumentacija/ginekolosko-zdravje#zdrs-smear-section' },
         { title: 'Nasveti za pripravo na prvi obisk pri ginekologu', link: '/novice/priprava-na-prvi-obisk-ginekologa' },
         { title: 'Uhajanje urina v menopavzi: vzroki, rešitve in podpora', link: '/novice/uhajanje-urina' },
+        { title: 'Genitalni Herpes: Vse, kar morate vedeti o simptomih, zdravljenju in preventivi', link: '/novice/herpes' },
 
 
     ];

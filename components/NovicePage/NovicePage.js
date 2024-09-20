@@ -10,6 +10,46 @@ const NovicePage = () => {
 
                 <div className='novica-holder'>
                     <div className='novica-right mobile'>
+                        <img alt='novica-img' className='novica-start-img' src='/Images/novica11.webp' />
+
+                    </div>
+                    <div className='novica-left'>
+                        <div className='left-top'>
+                            <div className='keywords-row'>
+                                <div className="matg keyword">Spolno prenosljiva bolezen</div>
+                                <div className="matg keyword">HSV</div>
+                                <div className="matg keyword">Zdravljenje herpesa</div>
+
+                            </div>
+                            <p className='blog-hint'>GINEKOLOŠKO ZDRAVJE</p>
+                            <p className='novica-left-header'>Genitalni Herpes: Vse, kar morate vedeti o simptomih, zdravljenju in preventivi</p>
+                            <p className='novica-left-paragraph'>Genitalni herpes je ena izmed najpogostejših spolno prenosljivih bolezni...</p>
+
+                        </div>
+                        <div className='left-bottom'>
+                            <div className='clock-row'>
+                                <img alt='clock-img' className='clock-img' src='/Images/calendar.png' />
+                                <p className='novica-date'>20/09/2024</p>
+                            </div>
+
+
+                            <div className='underlined-button'>
+                                <a href="/novice/herpes">PREBERI VEČ</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className='novica-right desktop'>
+                        <img alt='novica-img' className='novica-start-img' src='/Images/novica11.webp' />
+
+                    </div>
+
+                </div>
+
+                <div className='novica-holder'>
+                    <div className='novica-right mobile'>
                         <img alt='novica-img' className='novica-start-img' src='/Images/novica10.webp' />
 
                     </div>
